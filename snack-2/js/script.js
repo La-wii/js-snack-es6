@@ -35,13 +35,9 @@ const random = () => Math.floor(Math.random() * 10) + 1;
 const nuovoArray = [];
 
 for (let i = 0; i < squadre.length; i++){
+    squadre[i].falli = random(1,10);
     let{nome, falli} = squadre[i];
-    // falli = random(1,10);
-    falli = random(1,10);
-    nuovoArray.push({nome,falli});    
-
-    
-    
+    nuovoArray.push({nome,falli});       
 }
 
 console.log(nuovoArray);
