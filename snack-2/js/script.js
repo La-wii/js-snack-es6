@@ -27,18 +27,22 @@ const squadre = [
 
 // Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti. 
 // (Utilizzate le arrow function). 
-const random = (min,max) => Math.floor(Math.random() * (max - min) ) + min;
+// const random = (min,max) => Math.floor(Math.random() * (max - min) ) + min;
+
+const random = () => Math.floor(Math.random() * 10) + 1;
 
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi sono sempre degli oggetti che contengono solo nomi e falli subiti. Stampiamo tutto in console.
 const nuovoArray = [];
 
 for (let i = 0; i < squadre.length; i++){
     let{nome, falli} = squadre[i];
-    squadre[i].falli = random(1,10);
+    falli = random(1,10);
     nuovoArray.push({nome,falli});    
+    console.log(nuovoArray);
 }
 
-console.log(nuovoArray);
+
+
 
 
 
