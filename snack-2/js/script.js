@@ -24,6 +24,7 @@ const squadre = [
     
 ];
 
+
 // Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti. 
 // (Utilizzate le arrow function). 
 const random = (min,max) => Math.floor(Math.random() * (max - min) ) + min;
@@ -34,7 +35,7 @@ const nuovoArray = [];
 for (let i = 0; i < squadre.length; i++){
     let{nome, falli} = squadre[i];
     squadre[i].falli = random(1,10);
-    nuovoArray.push({nome,falli});
+    nuovoArray.push({nome,falli});    
 }
 
 console.log(nuovoArray);
