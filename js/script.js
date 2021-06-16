@@ -34,7 +34,7 @@ let {nome, peso} = pesoMinore;
 // template literal
 console.log(
     `
-    ${nome}
-    ${peso}
+    La bici che pesa meno è: ${nome} .
+    Il peso è: ${peso} kg.
     `
 );
