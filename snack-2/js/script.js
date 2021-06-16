@@ -36,12 +36,15 @@ const nuovoArray = [];
 
 for (let i = 0; i < squadre.length; i++){
     let{nome, falli} = squadre[i];
+    // falli = random(1,10);
     falli = random(1,10);
     nuovoArray.push({nome,falli});    
-    console.log(nuovoArray);
+
+    
+    
 }
 
-
+console.log(nuovoArray);
 
 
 
